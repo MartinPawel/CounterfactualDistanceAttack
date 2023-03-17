@@ -42,3 +42,15 @@ $y =  \mathbb{I}\big( p  > \gamma \big)$
 $\frac{||\beta||}{\sigma^2_{\varepsilon}} = \frac{1}{\sigma^2_{\varepsilon}}$.
 
 We fix the true weight vector to unit length to make sure that we keep a constant signal-to-noise ratio despite an increase in the feature dimension.
+
+
+## Credits
+If you find this code useful, please consider citing the corresponding work:
+```
+ @inproceedings{pawelczyk2022privacy,
+ title={{On the Privacy Risks of Algorithmic Recourse}},
+ author={Pawelczyk, Martin and Lakkaraju, Himabindu and Neel, Seth},
+ booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+ year={2023}
+}
+```
