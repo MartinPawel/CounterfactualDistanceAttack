@@ -8,7 +8,6 @@ attempt at investigating if and how an adversary can leverage recourses to infer
 about the underlying model’s training data. 
 
 ## Attack Overview
-
 Our proposed membership inference (MI) attacks are (Pawelczyk et al (2023)):
 - Counterfactual distance attack
 - Counterfactual distance LRT attack.
@@ -29,7 +28,15 @@ M_{\text{Loss}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } \ell(\t
 ```
 where the $\ell(\theta, \mathbf{z})$ denotes the loss (e.g., MSE-Loss or BCE-Loss) on the point $\mathbf{z} = (\mathbf{x}, y)$, and the threshold $\tau$ depends on $\mathbf{x}$ for the LRT attack (Carlini et al (2021)) and is constant for the standard loss based attack.
 
-## Data generating process to determine factors of attack success
+## Paper
+For a more detailed introduction to these issues please have a look at our paper available on arXiv:
+Martin Pawelczyk, Himabindu Lakkaraju* and Seth Neel*. ["On the Privacy Risks of Algorithmic Recoruse"](https://arxiv.org/abs/2211.05427) *International Conference on Artificial Intelligence and Statistics (AISTATS)*, PMLR, 2023, where * denotes equal senior author contribution.
+
+## Getting started
+### Conda environment
+We recommend setting up an extra conda environment for this code to ensure matching versions of the dependencies are installed. To setup the environment and run the notebooks, we assume you have a working installation of Anaconda and Jupyter.
+
+### Data generating process to determine factors of attack success
 To better understand attack success, we additionally provide the following simple generating process to understand the factors that make membership inference attacks successful. 
 Denote by $\gamma$ the class threshold. Denote by $q_{\mathbf{a}_{\alpha}}$ the $100 \times \alpha$-th quantile of an array $\mathbf{a}$.
 
