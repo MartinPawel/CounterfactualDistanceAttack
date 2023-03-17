@@ -34,7 +34,7 @@ Martin Pawelczyk, Himabindu Lakkaraju* and Seth Neel*. ["On the Privacy Risks of
 
 ## Getting started
 ### Conda environment
-We recommend setting up an extra conda environment for this code to ensure matching versions of the dependencies are installed. To setup the environment and run the notebooks, we assume you have a working installation of Anaconda and Jupyter.
+We recommend setting up an extra conda environment for this code to ensure matching versions of the dependencies are installed. To setup the environment and run the notebooks, we assume you have a working installation of Anaconda and Jupyter. If everything is setup, you can run the distance_experiment.ipynb with the default parameters to get an understanding of how the attack works.
 
 ### Data generating process to determine factors of attack success
 To better understand attack success, we additionally provide the following simple generating process to understand the factors that make membership inference attacks successful. 
