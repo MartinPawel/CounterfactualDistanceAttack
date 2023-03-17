@@ -9,7 +9,7 @@ about the underlying model’s training data.
 
 ## Attack Overview
 
-<img align="right" width="300" height="240" src="https://raw.githubusercontent.com/MartinPawel/CounterfactualDistanceAttack/main/information_sets.png">
+<img align="right" width="300" height="240" src="https://raw.githubusercontent.com/MartinPawel/CounterfactualDistanceAttack/main/information_sets.PNG">
 
 Our proposed membership inference (MI) attacks are (Pawelczyk et al (2023)):
 - Counterfactual distance attack
