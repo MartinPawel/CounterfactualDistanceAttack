@@ -8,6 +8,8 @@ attempt at investigating if and how an adversary can leverage recourses to infer
 about the underlying model’s training data. 
 
 ## Attack Overview
+<img align="left" width="350" height="350" src="https://raw.githubusercontent.com/martinpawel/CounterfactualDistanceAttack
+/main/information_sets.png">
 Our proposed membership inference (MI) attacks are (Pawelczyk et al (2023)):
 - Counterfactual distance attack
 - Counterfactual distance LRT attack.
