@@ -1,4 +1,11 @@
-# Counterfactual Distance MI Attack
+# On the Privavcy Risks of Algorithmic Recourse 
+### (@AISTATS 2023)
+As predictive models are increasingly being employed to make consequential decisions, there is
+a growing emphasis on developing techniques that can provide algorithmic recourse to affected
+individuals. While such recourses can be immensely beneficial to affected individuals, potential
+adversaries could also exploit these recourses to compromise privacy. In this code base, we make an 
+attempt at investigating if and how an adversary can leverage recourses to infer private information
+about the underlying model’s training data. 
 
 ## Attack Overview
 
@@ -18,13 +25,13 @@ This repo also contains re-implementations of two popular loss-based MI attacks:
 
 The (LRT) loss based attacks have the following form:
 ```math
-M_{\text{Loss}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } \ell(\theta, \mathbf{x}) \leq \tau_l(\mathbf{x}) \\ \texttt{NON-MEMBER} & \text{ if } \ell(\theta, \mathbf{x}) > \tau_l(\mathbf{x}) \end{cases},
+M_{\text{Loss}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } \ell(\theta, \mathbf{z}) \leq \tau_l(\mathbf{z}) \\ \texttt{NON-MEMBER} & \text{ if } \ell(\theta, \mathbf{x}) > \tau_l(\mathbf{x}) \end{cases},
 ```
-where the threshold $\tau$ depends on $\mathbf{x}$ for the LRT attack (Carlini et al (2021)) and is constant for the standard loss based attack.
+where the $\ell(\theta, \mathbf{z})$ denotes the loss (e.g., MSE-Loss or BCE-Loss) on the point $\mathbf{z} = (\mathbf{x}, y)$, and the threshold $\tau$ depends on $\mathbf{x}$ for the LRT attack (Carlini et al (2021)) and is constant for the standard loss based attack.
 
 ## Data generating process to determine factors of attack success
-
-Denote by $\gamma$ the class threshold. Denote by $q_{\mathbf{x}_{\alpha}}$ the $100 \times \alpha$-th quantile of the vector $\mathbf{x}$.
+To better understand attack success, we additionally provide the following simple generating process to understand the factors that make membership inference attacks successful. 
+Denote by $\gamma$ the class threshold. Denote by $q_{\mathbf{a}_{\alpha}}$ the $100 \times \alpha$-th quantile of an array $\mathbf{a}$.
 
 **Measurement error**:
 
