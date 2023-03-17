@@ -25,7 +25,7 @@ This repo also contains re-implementations of two popular loss-based MI attacks:
 
 The (LRT) loss based attacks have the following form:
 ```math
-M_{\text{Loss}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } \ell(\theta, \mathbf{z}) \leq \tau_l(\mathbf{z}) \\ \texttt{NON-MEMBER} & \text{ if } \ell(\theta, \mathbf{x}) > \tau_l(\mathbf{x}) \end{cases},
+M_{\text{Loss}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } \ell(\theta, \mathbf{z}) \leq \tau_l(\mathbf{z}) \\ \texttt{NON-MEMBER} & \text{ if } \ell(\theta, \mathbf{z}) > \tau_l(\mathbf{z}) \end{cases},
 ```
 where the $\ell(\theta, \mathbf{z})$ denotes the loss (e.g., MSE-Loss or BCE-Loss) on the point $\mathbf{z} = (\mathbf{x}, y)$, and the threshold $\tau$ depends on $\mathbf{x}$ for the LRT attack (Carlini et al (2021)) and is constant for the standard loss based attack.
 
