@@ -30,7 +30,7 @@ where the $\ell(\theta, \mathbf{z})$ denotes the loss (e.g., MSE-Loss or BCE-Los
 
 ## Paper
 For a more detailed introduction to these issues please have a look at our paper available on arXiv:
-Martin Pawelczyk, Himabindu Lakkaraju* and Seth Neel*. ["On the Privacy Risks of Algorithmic Recoruse"](https://arxiv.org/abs/2211.05427) *International Conference on Artificial Intelligence and Statistics (AISTATS)*, PMLR, 2023, where * denotes equal senior author contribution.
+Martin Pawelczyk, Himabindu Lakkaraju* and Seth Neel*, where * denotes equal senior author contribution: ["On the Privacy Risks of Algorithmic Recoruse"](https://arxiv.org/abs/2211.05427) *International Conference on Artificial Intelligence and Statistics (AISTATS)*, PMLR, 2023.
 
 ## Getting started
 ### Conda environment
