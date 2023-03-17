@@ -9,11 +9,9 @@ about the underlying model’s training data.
 
 ## Attack Overview
 
-<img align="right" width="300" height="240" src="https://raw.githubusercontent.com/MartinPawel/CounterfactualDistanceAttack/main/information_sets.PNG">
-
 Our proposed membership inference (MI) attacks are (Pawelczyk et al (2023)):
-- Counterfactual distance attack
-- Counterfactual distance LRT attack.
+- Counterfactual distance attack ($\texttt{CFD}$)
+- Counterfactual distance LRT attack ($\texttt{CFD LRT}$).
 
 In particular, our attacks take the following form:
 ```math
@@ -22,14 +20,17 @@ M_{\text{Distance}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } c(\
 where $c(\mathbf{x}, \mathbf{x}')$ denotes the counterfactual distance between $\mathbf{x}$ and $\mathbf{x}' = \mathbf{x} + \delta $
 
 This repo also contains re-implementations of two popular loss-based MI attacks:
-- Simple Loss attack (Yeom et al (2018))
-- LRT loss attack (Carlini et al (2021)).
+- Simple Loss attack ($\texttt{Loss}$) (Yeom et al (2018))
+- LRT loss attack ($\texttt{Loss LRT}$) (Carlini et al (2021)).
 
 The (LRT) loss based attacks have the following form:
 ```math
 M_{\text{Loss}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } \ell(\theta, \mathbf{z}) \leq \tau_l(\mathbf{z}) \\ \texttt{NON-MEMBER} & \text{ if } \ell(\theta, \mathbf{z}) > \tau_l(\mathbf{z}) \end{cases},
 ```
-where the $\ell(\theta, \mathbf{z})$ denotes the loss (e.g., MSE-Loss or BCE-Loss) on the point $\mathbf{z} = (\mathbf{x}, y)$, and the threshold $\tau$ depends on $\mathbf{x}$ for the LRT attack (Carlini et al (2021)) and is constant for the standard loss based attack.
+where the $\ell(\theta, \mathbf{z})$ denotes the loss (e.g., MSE-Loss or BCE-Loss) on the point $\mathbf{z} = (\mathbf{x}, y)$, and the threshold $\tau$ depends on $\mathbf{x}$ for the LRT attack (Carlini et al (2021)) and is constant for the standard loss based attack. The table below briefly summarizes the assumptions that underlie the various attack algorithms.
+
+<img align="center" width="600" height="200" src="/information_sets.PNG">
+
 
 ## Paper
 For a more detailed introduction to these issues please have a look at our paper available on arXiv:
