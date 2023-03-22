@@ -74,6 +74,8 @@ $$\frac{||\beta||}{\sigma^2_{\varepsilon}} = \frac{1}{\sigma^2_{\varepsilon}}$$
 
 In the here implmented version, we fix the true weight vector to unit length to make sure that we keep a constant signal-to-noise ratio despite an increase in the feature dimension.
 
+### Data sets
+To run experimetns on some real-world data sets, make sure to unzip the data folder, and to download the default data set from openml. The link to this data set can be found in the data/dataset_decscriptions/link.txt.
 
 ## Credits
 If you find this code useful, please consider citing the corresponding work:
