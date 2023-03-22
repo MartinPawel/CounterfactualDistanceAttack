@@ -1,11 +1,17 @@
 # On the Privavcy Risks of Algorithmic Recourse 
-### (@AISTATS 2023)
+###
 As predictive models are increasingly being employed to make consequential decisions, there is
 a growing emphasis on developing techniques that can provide algorithmic recourse to affected
 individuals. While such recourses can be immensely beneficial to affected individuals, potential
 adversaries could also exploit these recourses to compromise privacy. In this code base, we make an 
 attempt at investigating if and how an adversary can leverage recourses to infer private information
 about the underlying model’s training data. 
+
+## Paper @AISTATS 2023
+For a more detailed introduction to these issues presented here please have a look at our paper available on arXiv:
+
+>["On the Privacy Risks of Algorithmic Recourse"](https://arxiv.org/abs/2211.05427). Martin Pawelczyk, Himabindu Lakkaraju* and Seth Neel*.
+*In International Conference on Artificial Intelligence and Statistics (AISTATS)*, PMLR, 2023.
 
 ## Attack Overview
 
@@ -30,11 +36,6 @@ M_{\text{Loss}}(\mathbf{x})= \begin{cases} \texttt{MEMBER} & \text{ if } \ell(\t
 where the $\ell(\theta, \mathbf{z})$ denotes the loss (e.g., MSE-Loss or BCE-Loss) on the point $\mathbf{z} = (\mathbf{x}, y)$, and the threshold $\tau$ depends on $\mathbf{x}$ for the LRT attack (Carlini et al (2021)) and is constant for the standard loss based attack. The table below briefly summarizes the assumptions that underlie the various attack algorithms.
 
 <img align="center" width="600" height="200" src="/information_sets.PNG">
-
-
-## Paper
-For a more detailed introduction to these issues please have a look at our paper available on arXiv:
-Martin Pawelczyk, Himabindu Lakkaraju* and Seth Neel*, where * denotes equal senior author contribution: ["On the Privacy Risks of Algorithmic Recoruse"](https://arxiv.org/abs/2211.05427) *International Conference on Artificial Intelligence and Statistics (AISTATS)*, PMLR, 2023.
 
 ## Getting started
 ### Conda environment
