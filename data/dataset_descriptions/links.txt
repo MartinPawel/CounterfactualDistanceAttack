@@ -1,0 +1,4 @@
+Default: 		    https://www.openml.org/search?type=data&status=any&qualities.NumberOfInstances=between_10000_100000&qualities.NumberOfFeatures=between_100_1000&id=44067
+Housing:                    in folder - https://archive.ics.uci.edu/ml/machine-learning-databases/housing/
+MNIST:                      in folder
+HELOC:                      in folder 

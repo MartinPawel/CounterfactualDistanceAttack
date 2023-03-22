@@ -1,4 +1,0 @@
-Loan default prediction:    https://www.openml.org/search?type=data&status=any&qualities.NumberOfInstances=between_10000_100000&qualities.NumberOfFeatures=between_100_1000&id=44067
-Speed dating:               https://www.openml.org/search?type=data&status=active&qualities.NumberOfClasses=%3D_2&qualities.NumberOfFeatures=between_100_1000&qualities.NumberOfInstances=between_1000_10000&id=40536
-Fraud:                      https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022
-Telecom:                    https://www.openml.org/search?type=data&status=active&id=1112
