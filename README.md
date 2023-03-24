@@ -45,10 +45,6 @@ We recommend setting up an extra conda environment for this code to ensure match
 To better understand attack success, we additionally provide the following simple generating process to understand the factors that make membership inference attacks successful. 
 Denote by $\gamma$ the class threshold. Denote by $q_{\mathbf{a}_{\alpha}}$ the $100 \times \alpha$-th quantile of an array $\mathbf{a}$.
 
-**Measurement error**:
-
-$$\varepsilon \sim \mathcal{N}(0, \sigma^2_{\varepsilon})$$
-
 **Design matrix**: 
 
 $$\mathbf{X} \sim \mathcal{N}(\mu_d, \Sigma_d)$$
@@ -63,7 +59,9 @@ $$\beta = \frac{\beta}{||\beta||_2}$$
 
 **Labels**:
 
-$$score =  X \beta + \varepsilon$$
+$$score =  X \beta + \varepsilon$$,
+
+where $\varepsilon \sim \mathcal{N}(0, \sigma^2_{\varepsilon})$ is the measurement error.
 
 $$p = \frac{1}{1+\exp(-score)}$$
 
