@@ -1,4 +1,4 @@
-# On the Privavcy Risks of Algorithmic Recourse 
+# On the Privacy Risks of Algorithmic Recourse 
 ###
 As predictive models are increasingly being employed to make consequential decisions, there is
 a growing emphasis on developing techniques that can provide algorithmic recourse to affected
